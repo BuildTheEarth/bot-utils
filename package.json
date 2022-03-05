@@ -1,10 +1,10 @@
 {
   "name": "@buildtheearth/bot-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A utility library for the bots!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["lib/**/**/*"],
+  "files": ["dist/**/**/*"],
   "scripts": {
     "build": "tsc",
     "lint": "eslint src --fix",
