@@ -12,9 +12,18 @@
         "code",
         "projectManagement"
       ]
+    },
+    {
+      "login": "cAttte",
+      "name": "cAttte",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26514199?v=4",
+      "profile": "https://github.com/cAttte",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "projectName": "website-api.js",
+  "projectName": "bot-utils",
   "projectOwner": "BuildTheEarth",
   "repoType": "github",
   "repoHost": "https://github.com",
