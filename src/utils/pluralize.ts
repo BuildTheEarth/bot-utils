@@ -139,7 +139,7 @@ export function checkWord(
     }
 }
 
-export default function pluralize(
+export function pluralize(
     word: string,
     count?: number,
     inclusive?: boolean
