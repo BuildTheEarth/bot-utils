@@ -1,6 +1,6 @@
 {
   "name": "@buildtheearth/bot-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A utility library for the bots!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
