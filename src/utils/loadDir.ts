@@ -4,7 +4,7 @@ import Discord from "discord.js"
 
 //This is a generic loadDir, the one in main bot supercedes it
 //HELLO IF YOU WERE WONDERING WHY ISDEV DOSENT WORK USE THE ONLE IN MAIN BOT
-export default async function loadDir<T>(
+export async function loadDir<T>(
     dir: string,
     process?: (value: T) => T,
     baseCollection?: Discord.Collection<string, T>
