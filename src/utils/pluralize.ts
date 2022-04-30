@@ -138,12 +138,14 @@ export function checkWord(
         return sanitizeWord(token, token, rules) === token
     }
 }
-
-export function pluralize(
-    word: string,
-    count?: number,
-    inclusive?: boolean
-): string {
+/**
+ * @description Pluralize or singularize a word based on the passed in count.
+ * @param  {string} word The word to change the plural of
+ * @param  {number} [count] How many objects are we talking about?, optional
+ * @param  {boolean} [inclusive] Whether to include the number in the pluralized word, optional
+ * @returns {string} The pluralized word
+ */
+export function pluralize(word: string, count?: number, inclusive?: boolean): string {
     const pluralized = count === 1 ? singular(word) : plural(word)
 
     return (inclusive ? count + " " : "") + pluralized
@@ -461,5 +463,7 @@ export function addIrregularRule(single: string, plural: string): void {
     /measles$/i,
     /o[iu]s$/i, // "carnivorous"
     /pox$/i, // "chickpox", "smallpox"
-    /sheep$/i
+    /sheep$/i,
+    /[^aeiou]dh?i$/i, // "hindi", "sindhi", etc
+    /[^aeiou]ath?i$/i // gujurati, marathi, etc
 ].forEach(addUncountableRule)

@@ -1,3 +1,10 @@
+/**
+ * @description Truncate a string to a certain length
+ * @param  {string} string The string to truncate
+ * @param  {number} length The length of the truncated string
+ * @param  {string} [ellipsis] The ellipsis to use, "..." by default
+ * @returns {string} The truncated string
+ */
 export function truncateString(
     string: string,
     length: number,

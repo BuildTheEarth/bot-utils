@@ -2,8 +2,17 @@ import fs from "fs"
 import path from "path"
 import Discord from "discord.js"
 
-//This is a generic loadDir, the one in main bot supercedes it
-//HELLO IF YOU WERE WONDERING WHY ISDEV DOSENT WORK USE THE ONLE IN MAIN BOT
+/**
+ * @description Loads a directory of files and returns an collection of the files code contents
+ * @template T
+ * @param  {string} dir The directory to load
+ * @param  {function(value:T): T} [process] The function to process each file
+ * @param  {Discord.Collection<string, T>} [baseCollection] The base collection to add the files to
+ * @returns {Promise<Discord.Collection<string, T>>} The collection of files
+ * This is a generic loadDir, the one in main bot supercedes it
+ * For main bot use, use the one in main bot
+ * @async
+ */
 export async function loadDir<T>(
     dir: string,
     process?: (value: T) => T,

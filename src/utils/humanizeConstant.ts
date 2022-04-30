@@ -1,3 +1,10 @@
+/**
+ * @description Make a constant human readable
+ * @param  {string} name The constant to humainize
+ * @param  {string} [uppercaseExceptions] Optional, a list of words to uppercase as is
+ * @param  {string} [lowercaseExceptions] Optional, a list of words to lowercase as is
+ * @returns {string} The humainized constant
+ */
 export function humanizeConstant(
     name: string,
     uppercaseExceptions: string[] = [],

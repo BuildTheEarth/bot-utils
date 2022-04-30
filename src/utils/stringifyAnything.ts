@@ -1,5 +1,13 @@
 import JSON5 from "json5"
 
+/**
+ * @description Stringifies literally anything
+ * @param  {unknown} thing The thing to stringify
+ * @param  {number} [indent] The indent depth, 0 by default
+ * @param  {number} [depth] The space depth, 0 by default
+ * @param  {number} [currentDepth] The total depth offset to base other depths off of, 0 by default
+ * @returns {string} Your weirdest thing, stringified
+ */
 export function stringifyAnything(
     thing: unknown,
     indent: number = 0,

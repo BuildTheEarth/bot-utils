@@ -1,5 +1,9 @@
 import _ from "lodash"
-
+/**
+ * @description Converts a hex color to rgb
+ * @param  {string} hexCode the hex code to convert
+ * @returns {number[]} The RGB values of the hex code, lenght 3
+ */
 export function hexToRGB(hexCode: string): readonly [number, number, number] {
     let R: string | number, G: string | number, B: string | number
 

@@ -20,12 +20,28 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
+/**
+ * @description Replaces a string with a value asynchronously
+ * @param  {string} string The string to search and replace in
+ * @param  {string|RegExp} searchValue The value to search for
+ * @param  {string} replaceValue The replacement string
+ * @returns {Promise<string>} The replaced string
+ * @async
+ */
 export function replaceAsync(
     string: string,
     searchValue: string | RegExp,
     replaceValue: string
 ): Promise<string>
 
+/**
+ * @description Replaces a string with a value asynchronously
+ * @param  {string} string The string to search and replace in
+ * @param  {string|RegExp} searchValue The value to search for
+ * @param  {function(substring:string, ...args:any[]): (string | Promise<string>)} replacer The function to process each match
+ * @returns {Promise<string>} The string with the replacements
+ * @async
+ */
 export function replaceAsync(
     string: string,
     searchValue: string | RegExp,
@@ -33,6 +49,14 @@ export function replaceAsync(
     replacer: (substring: string, ...args: any[]) => Promise<string> | string
 ): Promise<string>
 
+/**
+ * @description Replaces a string with a value asynchronously
+ * @param  {string} string The string to search and replace in
+ * @param  {string|RegExp} searchValue The value to search for
+ * @param  {((function(substring:string, ...args:any[]): (string | Promise<string>)) | string)} replacer The function to process each match, or replacement string
+ * @returns {Promise<string>} The replaced string
+ * @async
+ */
 export async function replaceAsync(
     string: string,
     searchValue: string | RegExp,

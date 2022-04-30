@@ -1,0 +1,14 @@
+diff --git a/node_modules/minami/publish.js b/node_modules/minami/publish.js
+index 0eefeda..126ab08 100644
+--- a/node_modules/minami/publish.js
++++ b/node_modules/minami/publish.js
+@@ -582,9 +582,6 @@ exports.publish = function(taffyData, opts, tutorials) {
+ 
+   // update outdir if necessary, then create outdir
+   var packageInfo = (find({ kind: "package" }) || [])[0]
+-  if (packageInfo && packageInfo.name) {
+-    outdir = path.join(outdir, packageInfo.name, packageInfo.version || "")
+-  }
+   fs.mkPath(outdir)
+ 
+   // copy the template's static files to outdir

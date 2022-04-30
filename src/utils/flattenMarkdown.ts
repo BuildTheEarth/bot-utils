@@ -1,5 +1,10 @@
 import Discord from "discord.js"
-
+/**
+ * @param  {string} string The string to flatten markdown
+ * @param  {Discord.Guild} guild The Discord guild to fetch property managers from
+ * @returns {Promise<string>} The flattened markdown string
+ * @async
+ */
 export async function flattenMarkdown(
     string: string,
     guild: Discord.Guild

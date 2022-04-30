@@ -1,3 +1,11 @@
+/**
+ * @description Make an array human readable
+ * @param  {unknown[]} array The array to humanize
+ * @param  {boolean} [code] Whether to return the in code blocks, true by default
+ * @param  {string} [conjunction] The conjunction to use for the final list element, "and" by default
+ * @param  {string} [comma] The comma to use for the element seperation, "," by default
+ * @returns {string} The humainized array
+ */
 export function humanizeArray(
     array: unknown[],
     code: boolean = true,

@@ -1,4 +1,6 @@
 /**
+ * @param  {Date | number} date The date to format, can be a number in milliseconds or a Date object
+ * @param  {"d" | "D" | "f" | "F" | "R" | "t" | "T"} format "f" by default, see below for more info
  * Available formats:
  * * `d` (01/01/1970)
  * * `D` (January 1, 1970)
