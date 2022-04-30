@@ -37,6 +37,9 @@ Join us in this massive project as we recreate the Earth in Minecraft, in 1:1 sc
 
 This project follows the [All Contributors][] specification. Contributions of any kind are welcome!
 
+### Docs
+The docs can be found [here](https://buildtheearth.github.io/bot-utils/).
+
 ### Contributing
 
 If you wish to help by contributing to this project we greatly appreciate it but there are a few things you need to do first. To begin all of your contributions must follow our [Code Of Conduct](CODE_OF_CONDUCT.md) and we ask that you check with a member of the evelopment team before working on and proposing any major changes.
