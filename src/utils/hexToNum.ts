@@ -4,7 +4,7 @@ import _ from "lodash"
  * @param  {string} hexCode the hex code to convert
  * @returns {number} The hex value in base-10
  */
-export function hexToRGB(hexCode: string): number {
+export function hexToNum(hexCode: string): number {
     hexCode = "0x" + _.trimStart(hexCode, "#")
 
     return Number(hexCode)
