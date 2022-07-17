@@ -16,5 +16,6 @@ export * from "./replaceAsync"
 export * from "./stringifyAnything"
 export * from "./trimSides"
 export * from "./truncateString"
+export * from "./hexToNum"
 import ms from "ms"
 export { ms }
