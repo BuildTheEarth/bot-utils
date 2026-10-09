@@ -25,7 +25,7 @@ export async function loadDir<T>(
         const filepath = path.join(dir, file)
         let value: T = (await import(filepath)).default
         if (process) value = process(value)
-        else result.set(name, value)
+        result.set(name, value)
     }
 
     return result
