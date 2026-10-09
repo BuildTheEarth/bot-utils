@@ -1,7 +1,7 @@
 ﻿<!-- markdownlint-disable -->
 <div align="center">
 
-<img width="128" src="https://buildtheearth.net/assets/img/site-logo-animated.gif" />
+<img width="128" src="https://raw.githubusercontent.com/BuildTheEarth/assets/main/logos/logo.gif" />
 
 # bot-utils
 
