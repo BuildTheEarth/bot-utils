@@ -39,11 +39,15 @@
     "jsdoc-chameleon-template": "^1.0.2",
     "minami": "^1.2.3",
     "prettier": "^2.5.1",
+    "taffydb": "^2.7.3",
     "tsconfig-paths": "^3.13.0",
-    "typescript": "^4.6.2"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "@eslint/js": "^10.0.1",
     "discord.js": "^14.0.1",
+    "globals": "^17.13.0",
     "json5": "^2.2.0",
     "lodash": "^4.17.21",
     "ms": "^2.1.3",

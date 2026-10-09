@@ -27,8 +27,6 @@ const uncountables = {}
 const irregularPlurals = {}
 const irregularSingles = {}
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-
 export function sanitizeRule(rule: RegExp | string): RegExp {
     if (typeof rule === "string") {
         return new RegExp("^" + rule + "$", "i")
