@@ -8,31 +8,29 @@ on:
     types: [created]
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
     steps:
       - uses: actions/checkout@v7
+
       - uses: actions/setup-node@v7
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          package-manager-cache: false
+
       - run: npm ci
       - run: npm run build
 
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm run build
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NODE_TOKEN}}
+      - name: Verify package version
+        run: |
+          node -p "require('./package.json').version"
+          npm view @buildtheearth/bot-utils versions --json
+
+      - name: Publish to npm
+        run: npm publish --access public

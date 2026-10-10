@@ -7,9 +7,6 @@
   "files": [
     "dist/**/**/*"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint src --fix",
